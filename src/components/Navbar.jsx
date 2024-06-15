@@ -68,7 +68,7 @@ export default function Navbar() {
           <Link
             href="/catalog"
             className={`hover:text-[#B8C1B2] hover:transition-all ${
-              pathname === "/products"
+              pathname === "/catalog"
                 ? "text-[#B8C1B2] underline underline-offset-4"
                 : "text-white"
             }`}

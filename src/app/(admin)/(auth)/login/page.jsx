@@ -41,7 +41,7 @@ export default function Login() {
 
         const tokenBase64 = btoa(data.token);
         localStorage.setItem("token", tokenBase64);
-        router.push("/admin/dashboard");
+        router.push("/dashboard");
       } else {
         Swal.fire({
           title: "Failed Sign in",

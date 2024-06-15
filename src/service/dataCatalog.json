@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Wedding Planner",
+    "price": "2000000",
+    "description": "koordinasi dengan vendor dan mengatur anggaran pernikahan."
+  },
+  {
+    "id": "2",
+    "name": "Catering",
+    "price": "2500000",
+    "description": "mencakup makanan dan minuman untuk acara pernikahan."
+  },
+  {
+    "id": "3",
+    "name": "Dekorasi",
+    "price": "3000000",
+    "description": "menawarkan dekorasi mewah seperti bentuk stall dan pilihan bunga"
+  },
+  {
+    "id": "4",
+    "name": "Makeup",
+    "price": "3000000",
+    "description": "Anda dan pasangan terlihat istimewa di hari bahagia."
+  },
+  {
+    "id": "5",
+    "name": "Dokumentasi",
+    "price": "2000000",
+    "description": "Fotografi dan videografi untuk mengabadikan momen pernikahan."
+  },
+  {
+    "id": "6",
+    "name": "Entertainment",
+    "price": "4000000",
+    "description": "menyertakan hiburan seperti live music atau DJ untuk acara resepsi"
+  },
+  {
+    "id": "7",
+    "name": "Venue",
+    "price": "6000000",
+    "description": "menawarkan paket dengan lokasi pernikahan (venue)."
+  }
+]

@@ -13,6 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         login: "url('/images/background.jpg')",
       },
+      colors: {
+        "dark-blue": "#25396F",
+        "primary-blue": "#435EBE",
+      },
     },
   },
   plugins: [],

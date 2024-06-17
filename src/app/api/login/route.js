@@ -34,6 +34,4 @@ export const POST = async (request) => {
   } else {
     return NextResponse.json({ message: "Invalid username" });
   }
-
-  // return NextResponse.json({ message: "Account not found" }, { status: 400 });
 };

@@ -25,12 +25,6 @@ export default function Order() {
   };
 
   useEffect(() => {
-    // const interval = setInterval(() => {
-    //   fetchData(); // Panggil fungsi fetchData secara berkala
-    // }, 1000);
-    // }, 60000);
-    // return () => clearInterval(interval);
-
     fetchData();
   }, []);
 

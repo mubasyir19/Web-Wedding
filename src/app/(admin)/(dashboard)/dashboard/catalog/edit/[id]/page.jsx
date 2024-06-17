@@ -9,11 +9,6 @@ export default function EditCatalog() {
   const params = useParams();
   const { id } = params;
 
-  //   console.log("Params => ", id);
-
-  //   const [name, setName] = useState("");
-  //   const [price, setPrice] = useState("");
-  //   const [description, setDescription] = useState("");
   const [catalog, setCatalog] = useState({
     name: "",
     price: 0,
@@ -25,14 +20,13 @@ export default function EditCatalog() {
       try {
         const response = await fetch(`/api/catalog/detail/${id}`);
         const result = await response.json();
-        // console.log("Data => ", result);
         setCatalog(result.data);
       } catch (error) {
         console.log("Error => ", error);
       }
     };
 
-    fetchData(); // Panggil fetchData di dalam useEffect
+    fetchData();
   }, [id]);
 
   const handleChange = (e) => {
@@ -79,9 +73,7 @@ export default function EditCatalog() {
         <div className="">
           <h2 className="text-2xl font-medium text-dark-blue">Edit Catalog</h2>
         </div>
-        <div className="">
-          {/* <p className="normal-case">{pathname}</p> */}
-        </div>
+        <div className=""></div>
       </section>
       <section className="mt-12">
         <form onSubmit={handleSubmit}>

@@ -15,6 +15,12 @@ const poppins = Poppins({
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token);
+  }, []);
 
   const toogleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,6 +41,9 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+
+    let token = localStorage.getItem("token");
+    console.log("Token => ", token);
   }, []);
 
   return (
@@ -87,9 +96,15 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="my-auto">
-          <Link href="/login" className="underline">
-            Login Admin
-          </Link>
+          {isLoggedIn ? (
+            <Link href="/dashboard" className="underline">
+              Back to dashboard
+            </Link>
+          ) : (
+            <Link href="/login" className="underline">
+              Login Admin
+            </Link>
+          )}
         </div>
       </div>
       <div className="flex w-full justify-between md:hidden">

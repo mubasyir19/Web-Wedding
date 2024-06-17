@@ -5,7 +5,11 @@ const prisma = new PrismaClient();
 
 export const GET = async () => {
   try {
-    const listOrder = await prisma.order.findMany();
+    const listOrder = await prisma.order.findMany({
+      include: {
+        catalog: true,
+      },
+    });
 
     return NextResponse.json({
       message: "Success get list order",

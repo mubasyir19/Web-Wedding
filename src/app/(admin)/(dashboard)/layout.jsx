@@ -1,9 +1,19 @@
+"use client";
+
 import FooterDash from "@/components/Dashboard/FooterDash";
 import NavbarDash from "@/components/Dashboard/NavbarDash";
 import SidebarDash from "@/components/Dashboard/SidebarDash";
+import { isAuthenticated } from "@/service/auth";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function DashboardLayout({ children }) {
+  const router = useRouter();
+
+  if (!isAuthenticated()) {
+    router.push("/login");
+  }
+
   return (
     <main className="flex h-screen">
       <SidebarDash />

@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  CircleStackIcon,
-  CodeBracketSquareIcon,
-  ComputerDesktopIcon,
-  PresentationChartLineIcon,
-} from "@heroicons/react/24/solid";
+import { ShoppingCartIcon, QueueListIcon } from "@heroicons/react/24/solid";
 import { usePathname } from "next/navigation";
 
 export default function Dashboard() {
@@ -16,7 +11,7 @@ export default function Dashboard() {
     <>
       <section className="flex justify-between">
         <div className="">
-          <h2 className="text-dark-blue text-2xl font-medium">
+          <h2 className="text-2xl font-medium text-dark-blue">
             Home Dashboard
           </h2>
         </div>
@@ -25,40 +20,22 @@ export default function Dashboard() {
         </div>
       </section>
       <div className="mt-8 grid gap-x-4 md:grid-cols-2 lg:grid-cols-4">
-        <div className="card text-dark-blue flex h-32 w-full justify-between bg-gray-200 p-4 drop-shadow-lg">
+        <div className="card flex h-32 w-full justify-between rounded-lg bg-gray-200 p-4 text-dark-blue drop-shadow-lg">
+          <div className="">
+            <h3 className="text-4xl font-semibold">7</h3>
+            <p className="mt-3 text-lg">Catalogs</p>
+          </div>
+          <div className="">
+            <ShoppingCartIcon className="h-20 w-20 text-dark-blue text-opacity-20" />
+          </div>
+        </div>
+        <div className="card flex h-32 w-full justify-between rounded-lg bg-gray-200 p-4 text-dark-blue drop-shadow-lg">
           <div className="">
             <h3 className="text-4xl font-semibold">8</h3>
-            <p className="mt-3 text-lg">Frameworks</p>
+            <p className="mt-3 text-lg">Orders</p>
           </div>
           <div className="">
-            <CodeBracketSquareIcon className="text-dark-blue h-20 w-20 text-opacity-20" />
-          </div>
-        </div>
-        <div className="card text-dark-blue flex h-32 w-full justify-between bg-gray-200 p-4 drop-shadow-lg">
-          <div className="">
-            <h3 className="text-4xl font-semibold">2</h3>
-            <p className="mt-3 text-lg">Databases</p>
-          </div>
-          <div className="">
-            <CircleStackIcon className="text-dark-blue h-20 w-20 text-opacity-20" />
-          </div>
-        </div>
-        <div className="card text-dark-blue flex h-32 w-full justify-between bg-gray-200 p-4 drop-shadow-lg">
-          <div className="">
-            <h3 className="text-4xl font-semibold">5</h3>
-            <p className="mt-3 text-lg">Softwares</p>
-          </div>
-          <div className="">
-            <ComputerDesktopIcon className="text-dark-blue h-20 w-20 text-opacity-20" />
-          </div>
-        </div>
-        <div className="card text-dark-blue flex h-32 w-full justify-between bg-gray-200 p-4 drop-shadow-lg">
-          <div className="">
-            <h3 className="text-4xl font-semibold">23</h3>
-            <p className="mt-3 text-lg">Projects</p>
-          </div>
-          <div className="">
-            <PresentationChartLineIcon className="text-dark-blue h-20 w-20 text-opacity-20" />
+            <QueueListIcon className="h-20 w-20 text-dark-blue text-opacity-20" />
           </div>
         </div>
       </div>

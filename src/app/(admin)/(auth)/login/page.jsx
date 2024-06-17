@@ -1,6 +1,7 @@
 "use client";
 
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
@@ -59,7 +60,7 @@ export default function Login() {
       <div className="w-1/2 bg-login bg-cover bg-center">
         <div className="h-full w-full bg-black bg-opacity-50"></div>
       </div>
-      <div className="flex w-1/2 items-center justify-center">
+      <div className="relative flex w-1/2 items-center justify-center">
         <div className="">
           <h1 className="text-center text-3xl font-semibold">Login</h1>
           <form className="mt-10" onSubmit={handleSubmit}>
@@ -92,6 +93,11 @@ export default function Login() {
               </button>
             </div>
           </form>
+        </div>
+        <div className="absolute left-3 top-3">
+          <Link href="/" className="text-base text-black underline">
+            Back to home
+          </Link>
         </div>
       </div>
     </div>

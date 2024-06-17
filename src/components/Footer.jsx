@@ -23,10 +23,10 @@ export default function Footer() {
     >
       <Link href="/" className="my-auto text-center">
         <p className="text-xl italic" style={bilboSwashCaps.style}>
-          Pt Saputra Tenda Sejahtera
+          Enchanting Celebration
         </p>
         <p className="text-[6px]">
-          Konveksi pembuat dekorasi tenda, hotel, dan kantor.
+          Turning Love Stories into Timeless Memories.
         </p>
       </Link>
       <div className="mx-auto mt-4 flex flex-col gap-x-8 text-center text-sm md:my-auto md:flex-row">
@@ -36,9 +36,9 @@ export default function Footer() {
         <Link href="#">FAQ</Link>
       </div>
       <div className="mt-4 text-center md:my-auto">
-        <p className="text-xs">Our Online Store :</p>
+        <p className="text-xs">Social Media :</p>
         <div className="flex justify-center gap-x-4">
-          <Link href="#" className="cursor-pointer">
+          {/* <Link href="#" className="cursor-pointer">
             <Image
               src="/images/tokopedia.png"
               height={25}
@@ -46,8 +46,8 @@ export default function Footer() {
               alt="tokopedia"
               className=""
             />
-          </Link>
-          <Link href="#" className="cursor-pointer">
+          </Link> */}
+          {/* <Link href="#" className="cursor-pointer">
             <Image
               src="/images/shopee.png"
               height={25}
@@ -55,7 +55,7 @@ export default function Footer() {
               alt="tokopedia"
               className=""
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

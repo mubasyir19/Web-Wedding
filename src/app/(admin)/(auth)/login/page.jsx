@@ -30,17 +30,17 @@ export default function Login() {
       });
 
       const data = await response.json();
-      console.log("Data => ", data);
+      // console.log("Data => ", data.data);
 
-      if (data.token != null || !undefined) {
+      if (data != null || !undefined) {
         Swal.fire({
           title: "Sign in successfully",
           icon: "success",
         });
 
-        console.log("TOKEN => ", data);
+        // console.log("TOKEN => ", data.data);
 
-        const tokenBase64 = btoa(data.token);
+        const tokenBase64 = btoa(data.data);
         localStorage.setItem("token", tokenBase64);
         router.push("/dashboard");
       } else {

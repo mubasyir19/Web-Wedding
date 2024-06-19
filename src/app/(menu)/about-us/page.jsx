@@ -148,9 +148,9 @@ export default function AboutUs() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.982260347102!2d106.93780507482947!3d-6.2660629937226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d173e475f41%3A0xc2acdf99269ce4d1!2sJl.%20H.%20Wahab%20I%20No.36%2C%20RT.007%2FRW.003%2C%20Jatibening%20Baru%2C%20Kec.%20Pd.%20Gede%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017412!5e0!3m2!1sid!2sid!4v1718599693470!5m2!1sid!2sid"
               className="h-full w-full place-content-center"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </section>

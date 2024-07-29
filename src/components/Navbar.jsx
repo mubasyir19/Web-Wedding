@@ -94,6 +94,16 @@ export default function Navbar() {
           >
             About Us
           </Link>
+          <Link
+            href="/check-order"
+            className={`hover:text-[#B8C1B2] hover:transition-all ${
+              pathname === "/check-order"
+                ? "text-[#B8C1B2] underline underline-offset-4"
+                : "text-white"
+            }`}
+          >
+            Check Order
+          </Link>
         </div>
         <div className="my-auto">
           {isLoggedIn ? (
@@ -162,6 +172,12 @@ export default function Navbar() {
                 className="block text-center text-lg text-white"
               >
                 About Us
+              </Link>
+              <Link
+                href="/check-order"
+                className="block text-center text-lg text-white"
+              >
+                Check Order
               </Link>
             </div>
           </div>
